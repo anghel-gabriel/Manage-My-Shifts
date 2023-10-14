@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<title>WageWise</title>
+		<link href="./assets/images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+		<link href="./styles/style.css" rel="stylesheet" />
+		<script defer src="./scripts/components/navbar.js"></script>
+		<script src="./scripts/homepage.js" type="module"></script>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar">
+				<a href="./index.html"><img alt="" class="logo" src="./assets/images/header-logo.png" /></a>
+				<p class="greeting"></p>
+				<ul class="nav-menu">
+					<li class="nav-item">
+						<a class="nav-link active" href="./index.html">My shifts</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./edit-user.html">Edit user</a>
+					</li>
+					<li class="nav-item">
+						<span class="log-out">Log out</span>
+					</li>
+				</ul>
+				<div class="hamburger">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div class="shifts__row">
+				<div class="buttons">
+					<button class="add-shift">Add shift</button>
+					<button class="reset-filters">Reset filters</button>
+				</div>
+				<div class="filter">
+					<select class="filter__workplace">
+						<option value="">Workplace*</option>
+						<option value="NewTech Frontend">NewTech Frontend</option>
+						<option value="NewTech Fullstack">NewTech Fullstack</option>
+						<option value="NewTech Data Analyst">NewTech Data Analyst</option>
+						<option value="NewTech SQL">NewTech SQL</option>
+					</select>
+					<input class="filter__start" type="text" placeholder="Start date" onfocus="this.type='date'" />
+					<input class="filter__end" type="text" placeholder="End date" onfocus="this.type='date'" />
+					<!-- TODO: placeholders colors -->
+				</div>
+			</div>
+
+			<table class="table">
+				<thead>
+					<th>
+						<p><img alt="hashtag-icon" src="./assets/icons/hashtag.svg" />Shift ID</p>
+					</th>
+					<th>
+						<p><img alt="play-icon" src="./assets/icons/time.svg" />Time</p>
+					</th>
+
+					<th>
+						<p><img alt="workplace-icon" src="./assets/icons/workplace.svg" /> Workplace</p>
+					</th>
+					<th>
+						<p><img alt="dollar-icon" src="./assets/icons/hourly-wage.svg" />Hourly Wage</p>
+					</th>
+					<th>
+						<p><img alt="money-icon" src="./assets/icons/salary.svg" />Total Profit</p>
+					</th>
+					<th>
+						<p><img alt="text-bubble-icon" src="./assets/icons/comments.svg" />Comments</p>
+					</th>
+					<th>
+						<p><img alt="tools-icon" src="./assets/icons/actions.svg" />Actions</p>
+					</th>
+				</thead>
+				<tbody></tbody>
+			</table>
+			<p class="best-month"></p>
+		</main>
+		<footer class="footer">
+			<img alt="footer__logo" src="./assets/images/footer-logo.png" />
+			<p class="footer_copyright">© 2023 WageWise</p>
+			<ul class="footer_menu">
+				<li class="footer__item"><a class="footer__link" href="./index.html">My shifts</a></li>
+				<li class="footer__item"><a class="footer__link" href="./add-shift.html">Add shift</a></li>
+				<li class="footer__item"><a class="footer__link" href="./edit-user.html">Edit user</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>

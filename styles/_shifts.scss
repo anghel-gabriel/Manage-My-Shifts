@@ -1,0 +1,172 @@
+.table {
+	width: 100%;
+	border-collapse: collapse;
+	border-radius: $size-xs;
+	overflow: hidden;
+	box-shadow: 2px 5px 40px -2px rgba(0, 0, 0, 0.329);
+
+	button {
+		width: 80px;
+		padding: $size-xs;
+		margin: 2px 0;
+	}
+
+	img {
+		height: $size-xxl;
+	}
+
+	p {
+		@include flex(column, center, center);
+		gap: 5px;
+	}
+}
+
+.shifts__row {
+	width: 90vw;
+	margin-bottom: $size-xs;
+	@include flex(row, space-between, center);
+	flex-wrap: wrap;
+	gap: $size-xs;
+
+	.buttons {
+		display: flex;
+		gap: 5px;
+	}
+
+	.add-shift,
+	.reset-filters {
+		height: 52px;
+		border-radius: 6px;
+		font-size: $size-m;
+	}
+
+	.filter__workplace,
+	.filter__start,
+	.filter__end {
+		height: 52px;
+		width: 150px;
+		background-color: $light-grey;
+		color: $darker-grey;
+		&::placeholder {
+			color: $darker-grey;
+		}
+	}
+}
+
+.filter {
+	@include flex(row, space-between, center);
+	gap: $size-xs;
+	flex-wrap: wrap;
+}
+
+.best-month {
+	border-radius: $size-xs;
+	width: 100%;
+	margin-top: $size-xl;
+	font-size: $size-l;
+	padding: $size-xl;
+	background-color: $light-grey;
+	color: black;
+}
+
+.table tr {
+	padding: $size-xs;
+}
+
+.table td {
+	padding: $size-xxl $size-xs;
+	text-align: center;
+}
+
+.table th {
+	text-align: center;
+	padding: $size-s $size-xs;
+	background-color: $dark-grey;
+	color: white;
+}
+
+.table tbody tr:nth-child(even) {
+	background-color: $dark-grey;
+	color: white;
+	padding: $size-xl;
+
+	button {
+		background-color: white;
+		color: $dark-grey;
+		transition: 0.3s background-color, 0.3s color;
+
+		&:hover {
+			background-color: black;
+			color: white;
+		}
+
+		&:active {
+			background-color: white;
+			color: $dark-grey;
+		}
+	}
+}
+
+.table tbody tr:nth-child(odd) {
+	background-color: #f3f3f3;
+	color: black;
+	padding: $size-xl 0;
+}
+
+//Media queries
+
+@media (max-width: 790px) {
+	.table {
+		width: 90vw;
+	}
+	.table thead {
+		display: none;
+	}
+	.table tbody,
+	.table tr,
+	.table td {
+		display: block;
+	}
+	.table td {
+		padding-left: 40%;
+		text-align: right;
+		position: relative;
+		margin-right: $size-m;
+	}
+	.table tbody tr:nth-child(even) {
+		padding: 0;
+	}
+	.table td::before {
+		content: attr(data-label);
+		position: absolute;
+		left: 0;
+		width: 50%;
+		font-size: $size-m;
+		font-weight: $bold;
+		text-align: left;
+		margin-left: 15px;
+	}
+}
+
+@media (max-width: 784px) {
+	.filter {
+		width: 100%;
+		.filter__workplace,
+		input.filter__start,
+		input.filter__end {
+			width: 31%;
+		}
+	}
+}
+
+@media (max-width: 522px) {
+	.filter {
+		width: 100%;
+
+		.filter__workplace,
+		input.filter__start,
+		input.filter__end {
+			width: 100%;
+		}
+	}
+}

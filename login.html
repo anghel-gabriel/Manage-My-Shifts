@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<title>WageWise</title>
+		<link href="./assets/images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+		<link href="./styles/style.css" rel="stylesheet" />
+		<script defer src="./scripts/components/navbar.js"></script>
+		<script defer src="./scripts/login.js" type="module"></script>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar">
+				<a href=""><img alt="" class="logo" src="./assets/images/header-logo.png" /></a>
+				<ul class="nav-menu">
+					<li class="nav-item"><a class="nav-link" href="./sign-up.html">Sign up</a></li>
+					<li class="nav-item"><a class="nav-link active" href="./login.html">Login</a></li>
+				</ul>
+				<div class="hamburger">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<form class="login">
+				<h2 class="form__title">Log in</h2>
+				<input class="login__username" minlength="6" placeholder="Username*" required type="text" />
+				<input class="login__password" minlength="6" placeholder="Password*" required type="password" />
+
+				<div class="form__row">
+					<button class="login__submit" type="submit">Log in</button>
+					<p class="row__text">Forgot your password? <a href="./reset-password.html">Reset it!</a></p>
+				</div>
+			</form>
+		</main>
+		<footer class="footer">
+			<img alt="footer__logo" src="./assets/images/footer-logo.png" />
+			<p class="footer_copyright">© 2023 WageWise</p>
+			<ul class="footer_menu">
+				<li class="footer__item"><a href="./sign-up.html" class="footer__link">Sign up</a></li>
+				<li class="footer__item"><a href="./login.html" class="footer__link">Log in</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>

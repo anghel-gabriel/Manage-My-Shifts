@@ -1,0 +1,38 @@
+.footer {
+	@include flex(row, space-between, center);
+	background-color: $light-grey;
+	width: 100%;
+	margin-top: auto;
+	padding: 10px 5vw;
+	font-size: $size-m;
+
+	img {
+		height: 60px;
+	}
+
+	ul {
+		@include flex(row, center, flex-start);
+		gap: 15px;
+	}
+
+	ul {
+		li,
+		a {
+			color: $darker-grey;
+			transition: color 0.3s;
+			:hover {
+				color: $dark-grey;
+			}
+			:active {
+				color: $dark-grey;
+			}
+		}
+	}
+}
+
+@media (max-width: 390px) {
+	.footer ul {
+		flex-direction: column;
+		gap: 10px;
+	}
+}

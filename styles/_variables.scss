@@ -1,0 +1,29 @@
+// colors
+$lighter-grey: #ddd;
+$light-grey: #d7d7d7;
+$grey: rgb(137, 137, 137);
+$darker-grey: #484848;
+$dark-grey: #262626;
+
+// font weights
+$thin: 300;
+$bold: 600;
+$heavy: 800;
+
+// sizes
+$size-xs: 10px;
+$size-s: 14px;
+$size-m: 16px;
+$size-l: 18px;
+$size-xl: 20px;
+$size-xxl: 22px;
+$size-xxxl: 24px;
+
+// mixins
+@mixin flex($flex-direction, $justify-content, $align-items) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+

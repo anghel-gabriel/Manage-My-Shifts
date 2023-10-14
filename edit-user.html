@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<title>WageWise</title>
+		<link href="./styles/style.css" rel="stylesheet" />
+		<script defer src="./scripts/helpers/toasts.js"></script>
+		<script defer src="./scripts/components/navbar.js"></script>
+		<script defer src="./scripts/edit-user.js" type="module"></script>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar">
+				<a href="./index.html"><img alt="" class="logo" src="./assets/images/header-logo.png" /></a>
+				<p class="greeting"></p>
+				<ul class="nav-menu">
+					<li class="nav-item">
+						<a class="nav-link" href="./index.html">My shifts</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="./edit-user.html">Edit user</a>
+					</li>
+					<li class="nav-item">
+						<span class="log-out">Log out</span>
+					</li>
+				</ul>
+
+				<div class="hamburger">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<form class="edit">
+				<h2 class="form__title">Edit user</h2>
+				<input class="edit__email" placeholder="Email address*" required type="email" />
+				<input class="edit__username" minlength="6" placeholder="Username*" required type="text" />
+				<input class="edit__password" minlength="6" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]+$" placeholder="Password*" required title="Password must be at least 6 characters and contain at least one letter, one number, and one of the following special characters: @$!%*#?&." type="password" />
+				<input class="edit__first-name" minlength="2" placeholder="First name*" required type="text" />
+				<!-- #TODO: minimum 2 letters, not 2 characters -->
+				<input class="edit__last-name" minlength="2" placeholder="Last name*" required type="text" />
+				<!-- #TODO: minimum 2 letters, not 2 characters -->
+				<input class="edit__age" max="65" min="18" placeholder="Age in years*" required type="number" />
+				<button class="edit__submit" type="submit">Edit user</button>
+			</form>
+		</main>
+		<footer class="footer">
+			<img alt="footer__logo" src="./assets/images/footer-logo.png" />
+			<p class="footer_copyright">© 2023 WageWise</p>
+			<ul class="footer_menu">
+				<li class="footer__item"><a href="./index.html" class="footer__link">My shifts</a></li>
+				<li class="footer__item"><a href="./add-shift.html" class="footer__link">Add shift</a></li>
+				<li class="footer__item"><a href="./edit-user.html" class="footer__link">Edit user</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>

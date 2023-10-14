@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<title>WageWise</title>
+		<link href="./assets/images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+		<link href="./styles/style.css" rel="stylesheet" />
+		<script defer src="./scripts/components/navbar.js"></script>
+		<script src="./scripts/add-shift.js" type="module"></script>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar">
+				<a href="./index.html"><img alt="" class="logo" src="./assets/images/header-logo.png" /></a>
+				<p class="greeting"></p>
+				<ul class="nav-menu">
+					<li class="nav-item">
+						<a class="nav-link active" href="./index.html">My shifts</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./edit-user.html">Edit user</a>
+					</li>
+					<li class="nav-item">
+						<span class="log-out">Log out</span>
+					</li>
+				</ul>
+				<div class="hamburger">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<form class="shift">
+				<h2 class="form__title">Add shift</h2>
+				<input class="shift__start-time" name="shift-start-time" required type="text" placeholder="Start time" onfocus="this.type='datetime-local'" />
+				<input class="shift__end-time" name="shift-end-time" required type="text" placeholder="End time" onfocus="this.type='datetime-local'" />
+				<input class="shift__hourly-wage" name="hourly-wage" placeholder="Hourly wage*" required step="any" type="number" step="any" />
+				<select class="shift__workplace" required>
+					<option value="">Workplace*</option>
+					<option value="NewTech Frontend">NewTech Frontend</option>
+					<option value="NewTech Fullstack">NewTech Fullstack</option>
+					<option value="NewTech Data Analyst">NewTech Data Analyst</option>
+					<option value="NewTech SQL">NewTech SQL</option>
+				</select>
+				<textarea class="shift__comments" name="comments" placeholder="Comments"></textarea>
+				<button class="shift-form__submit" type="submit">Add shift</button>
+			</form>
+		</main>
+		<footer class="footer">
+			<img alt="footer__logo" src="./assets/images/footer-logo.png" />
+			<p class="footer_copyright">© 2023 WageWise</p>
+			<ul class="footer_menu">
+				<li class="footer__item"><a class="footer__link" href="./index.html">My shifts</a></li>
+				<li class="footer__item"><a class="footer__link" href="./add-shift.html">Add shift</a></li>
+				<li class="footer__item"><a class="footer__link" href="./edit-user.html">Edit user</a></li>
+			</ul>
+		</footer>
+		<div class="loader-window">
+			<dialog class="show">
+				<div class="loader">
+					<div class="loader__spinner"></div>
+				</div>
+			</dialog>
+		</div>
+	</body>
+</html>
+
+<!-- TODO: placeholders for datetime input -->

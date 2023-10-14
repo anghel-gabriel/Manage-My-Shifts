@@ -1,0 +1,110 @@
+form {
+  @include flex(column, center, center);
+  gap: 27px;
+  box-shadow: 2px 1px 21px -9px rgba(0, 0, 0, 0.38);
+  width: 90vw;
+  padding: 30px;
+  border-radius: $size-m;
+}
+
+.form__title {
+  align-self: flex-start;
+}
+
+input,
+textarea,
+select {
+  font-size: $size-m;
+  width: 100%;
+  padding: $size-m;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  background: #f7f7f7;
+  transition: background-color 0.3s;
+
+  &:focus {
+    background-color: $lighter-grey;
+    outline: none;
+  }
+}
+
+input::placeholder {
+  color: $grey;
+}
+
+input[readonly] {
+  color: white;
+  background-color: $dark-grey;
+}
+
+select:invalid {
+  color: $grey;
+}
+
+option {
+  color: darkgrey;
+
+  &:not([value=""]) {
+    color: black
+  }
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-size: $size-m;
+  padding: $size-s $size-l;
+  align-self: flex-start;
+  background-color: $dark-grey;
+  color: white;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
+
+  &:hover {
+    background-color: $lighter-grey;
+    color: $dark-grey;
+  }
+
+  &:active {
+    background-color: $dark-grey;
+    color: $lighter-grey;
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+
+.form__row {
+  width: 100%;
+  @include flex(row, space-between, center);
+  gap: $size-xl;
+
+  p {
+    font-style: italic;
+    color: $dark-grey;
+
+    a {
+      color: black;
+      font-weight: $bold;
+      transition: color 0.4s;
+
+      &:hover {
+        color: rgb(140, 140, 140);
+      }
+
+      &:active {
+        color: black;
+      }
+    }
+  }
+}
+
+// Media queries
+
+@media (min-width: 782px) {
+  form {
+    width: 644px;
+  }
+}
