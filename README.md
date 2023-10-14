@@ -18,7 +18,7 @@ The purpose of this app is to offer a straightforward and user-friendly 😁 sol
   ● Suitable for tablets and smartphones <br><br>
 
 ○ Architecture and Technological Requirements:<br>
-  ● Client only without server side data.<br><br>
+  ● Client only without server side data<br><br>
 
 ○ Infrastructure: <br>
   ● Client side <br>
