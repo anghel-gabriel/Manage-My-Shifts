@@ -23,7 +23,7 @@ The purpose of this app is to offer a straightforward and user-friendly 😁 sol
 ○ Infrastructure: <br>
   ● Client side <br>
   ● HTML <br>
-  ● Css <br>
+  ● CSS <br>
   ● JavaScript <br>
   ● Database - local storage <br>
   ● Internationalization (English language)<br>
