@@ -2,7 +2,7 @@
 🌠 Click here to use the app: https://manage-my-shifts.netlify.app/sign-up
 
 ### 📄Case Study
-A friend 🙍‍♂️ has approached me with a request to develop an app 💻for tracking employees' work hours ⏲️. The workplace 🏢 is required to maintain a record of an employee's monthly 🗓️ working hours for the purpose of calculating wages 💵, collecting fees, calculating expenses, and so on. The primary request was to develop an app ⌨️ that would enable an employee to keep track of their work hours and calculate how much money they should receive each month based on the number of hours they have worked.
+A friend 🙍‍♂️ has approached me with a request to develop an app 💻 for tracking employees' work hours ⏲️. The workplace 🏢 is required to maintain a record of an employee's monthly 🗓️ working hours for the purpose of calculating wages 💵, collecting fees, calculating expenses, and so on. The primary request was to develop an app ⌨️ that would enable an employee to keep track of their work hours and calculate how much money they should receive each month based on the number of hours they have worked.
 <br><br><br>
 
 ### 🎯 Goals
