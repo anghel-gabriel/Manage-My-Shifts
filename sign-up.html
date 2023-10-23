@@ -4,7 +4,10 @@
 		<meta charset="UTF-8" />
 		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
 		<title>WageWise</title>
-		<link href="./assets/images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+		<link
+			href="./assets/images/favicon.png"
+			rel="shortcut icon"
+			type="image/x-icon" />
 		<link href="./styles/style.css" rel="stylesheet" />
 		<script defer src="./scripts/components/navbar.js"></script>
 		<script defer src="./scripts/sign-up.js" type="module"></script>
@@ -12,10 +15,16 @@
 	<body>
 		<header>
 			<nav class="navbar">
-				<a href=""><img alt="" class="logo" src="./assets/images/header-logo.png" /></a>
+				<a href=""
+					><img alt="" class="logo" src="./assets/images/header-logo.png"
+				/></a>
 				<ul class="nav-menu">
-					<li class="nav-item"><a class="nav-link active" href="./sign-up.html">Sign up</a></li>
-					<li class="nav-item"><a class="nav-link" href="./login.html">Login</a></li>
+					<li class="nav-item">
+						<a class="nav-link active" href="./sign-up.html">Sign up</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./login.html">Login</a>
+					</li>
 				</ul>
 				<div class="hamburger">
 					<span class="bar"></span>
@@ -27,17 +36,49 @@
 		<main>
 			<form class="register">
 				<h2 class="form__title">Sign up</h2>
-				<input class="register__email" name="email" placeholder="Email address*" required type="email" />
-				<input class="register__username" minlength="6" placeholder="Username*" required type="text" />
-				<input class="register__password" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{6,}$" placeholder="Password*" required title="Password must be at least 6 characters and contain at least one letter, one number and one symbol." type="password" />
-				<input class="register__first-name" minlength="2" placeholder="First name*" required type="text" />
-				<!-- #TODO: minimum 2 letters, not 2 characters -->
-				<input class="register__last-name" minlength="2" placeholder="Last name*" required type="text" />
-				<!-- #TODO: minimum 2 letters, not 2 characters -->
-				<input class="register__age" max="65" min="18" placeholder="Age in years*" required type="number" />
+				<input
+					class="register__email"
+					name="email"
+					placeholder="Email address*"
+					required
+					type="email" />
+				<input
+					class="register__username"
+					minlength="6"
+					placeholder="Username*"
+					required
+					type="text" />
+				<input
+					class="register__password"
+					pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{6,}$"
+					placeholder="Password*"
+					required
+					title="Password must be at least 6 characters and contain at least one letter, one number and one symbol."
+					type="password" />
+				<input
+					class="register__first-name"
+					minlength="2"
+					placeholder="First name*"
+					required
+					type="text" />
+				<input
+					class="register__last-name"
+					minlength="2"
+					placeholder="Last name*"
+					required
+					type="text" />
+				<input
+					class="register__age"
+					max="65"
+					min="18"
+					placeholder="Age in years*"
+					required
+					type="number" />
 				<div class="form__row">
 					<button class="register__submit" type="submit">Create account</button>
-					<p class="row__text">Already have an account? <a href="./login.html">Log in!</a></p>
+					<p class="row__text">
+						Already have an account? <a href="./login.html">Log in!</a>
+					</p>
 				</div>
 			</form>
 		</main>
@@ -45,8 +86,12 @@
 			<img alt="footer__logo" src="./assets/images/footer-logo.png" />
 			<p class="footer_copyright">© 2023 WageWise</p>
 			<ul class="footer_menu">
-				<li class="footer__item"><a href="./sign-up.html" class="footer__link">Sign up</a></li>
-				<li class="footer__item"><a href="./login.html" class="footer__link">Log in</a></li>
+				<li class="footer__item">
+					<a href="./sign-up.html" class="footer__link">Sign up</a>
+				</li>
+				<li class="footer__item">
+					<a href="./login.html" class="footer__link">Log in</a>
+				</li>
 			</ul>
 		</footer>
 	</body>
