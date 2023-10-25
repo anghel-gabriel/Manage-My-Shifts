@@ -28,3 +28,5 @@ The purpose of this app is to offer a straightforward and user-friendly 😁 sol
   ● Database - local storage <br>
   ● Internationalization (English language)<br>
   ● Security - local storage
+
+🚫 Due to confidentiality reasons, I can not publish the exact project requirements and grading scale.
